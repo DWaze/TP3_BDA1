@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="@localhost">
+  <database-model serializer="dbm" rdbms="ORACLE" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="INVENTORY1">
+      <ObjectId>49</ObjectId>
+      <IntrospectionTimestamp>2016-12-11.11:52:19</IntrospectionTimestamp>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-06.21:13:06</ModifiedTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="PUBLIC">
+      <ObjectId>1</ObjectId>
+    </schema>
+    <schema id="4" parent="1" name="SYS">
+      <ObjectId>0</ObjectId>
+    </schema>
+    <schema id="5" parent="1" name="SYSTEM">
+      <ObjectId>5</ObjectId>
+    </schema>
+    <schema id="6" parent="1" name="OUTLN">
+      <ObjectId>9</ObjectId>
+    </schema>
+    <schema id="7" parent="1" name="DIP">
+      <ObjectId>14</ObjectId>
+    </schema>
+    <schema id="8" parent="1" name="ORACLE_OCM">
+      <ObjectId>21</ObjectId>
+    </schema>
+    <schema id="9" parent="1" name="DBSNMP">
+      <ObjectId>29</ObjectId>
+    </schema>
+    <schema id="10" parent="1" name="APPQOSSYS">
+      <ObjectId>30</ObjectId>
+    </schema>
+    <schema id="11" parent="1" name="CTXSYS">
+      <ObjectId>32</ObjectId>
+    </schema>
+    <schema id="12" parent="1" name="XDB">
+      <ObjectId>34</ObjectId>
+    </schema>
+    <schema id="13" parent="1" name="ANONYMOUS">
+      <ObjectId>35</ObjectId>
+    </schema>
+    <schema id="14" parent="1" name="MDSYS">
+      <ObjectId>42</ObjectId>
+    </schema>
+    <schema id="15" parent="1" name="HR">
+      <ObjectId>43</ObjectId>
+    </schema>
+    <schema id="16" parent="1" name="FLOWS_FILES">
+      <ObjectId>44</ObjectId>
+    </schema>
+    <schema id="17" parent="1" name="APEX_PUBLIC_USER">
+      <ObjectId>45</ObjectId>
+    </schema>
+    <schema id="18" parent="1" name="APEX_040000">
+      <ObjectId>47</ObjectId>
+    </schema>
+    <schema id="19" parent="1" name="BDA1">
+      <ObjectId>48</ObjectId>
+    </schema>
+    <schema id="20" parent="1" name="XS$NULL">
+      <ObjectId>2147483638</ObjectId>
+    </schema>
+    <sequence id="21" parent="2" name="CUSTOMER_SEQUENCE">
+      <ObjectId>20176</ObjectId>
+      <CreatedTimestamp>2016-11-14.20:38:46</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-14.20:38:46</ModifiedTimestamp>
+      <SequenceIdentity>1..9999999</SequenceIdentity>
+      <CacheSize>10</CacheSize>
+    </sequence>
+    <table id="22" parent="2" name="CUSTOMER">
+      <ObjectId>20168</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-06.21:11:41</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="2" name="PRODUCT">
+      <ObjectId>20169</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-29.19:23:58</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="2" name="SALES">
+      <ObjectId>20170</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-14.18:46:28</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="2" name="SALESPERSON">
+      <ObjectId>20172</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-14.18:46:28</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="2" name="SALES_HISTORY">
+      <ObjectId>20171</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:46:28</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-14.18:46:28</ModifiedTimestamp>
+    </table>
+    <view id="27" parent="2" name="SALES_SOUTH">
+      <ObjectId>20173</ObjectId>
+      <CreatedTimestamp>2016-11-14.18:54:44</CreatedTimestamp>
+      <ModifiedTimestamp>2016-11-14.18:54:44</ModifiedTimestamp>
+      <Modifiable>1</Modifiable>
+    </view>
+    <column id="28" parent="22" name="CUSTOMER_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="29" parent="22" name="FIRST_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="30" parent="22" name="LAST_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="31" parent="22" name="MIDDLE_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="32" parent="22" name="ADDRESS_LINE1">
+      <Position>5</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="33" parent="22" name="ADDRESS_LINE2">
+      <Position>6</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="34" parent="22" name="CITY">
+      <Position>7</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+    </column>
+    <column id="35" parent="22" name="COUNTRY">
+      <Position>8</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="36" parent="22" name="DATE_ADDED">
+      <Position>9</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="37" parent="22" name="REGION">
+      <Position>10</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+    <index id="38" parent="22" name="CUST_FUNCTION_INDEX">
+      <ObjectId>20335</ObjectId>
+      <CreatedTimestamp>2016-12-06.21:11:41</CreatedTimestamp>
+      <ModifiedTimestamp>2016-12-06.21:13:06</ModifiedTimestamp>
+      <TablespaceName>SYSTEM</TablespaceName>
+      <ColNames>CITY</ColNames>
+    </index>
+    <column id="39" parent="23" name="PRODUCT_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="40" parent="23" name="PRODUCT_NAME">
+      <Position>2</Position>
+      <DataType>VARCHAR2(100)|0</DataType>
+    </column>
+    <column id="41" parent="23" name="STANDARD_COST">
+      <Position>3</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="42" parent="23" name="COLOR">
+      <Position>4</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="43" parent="23" name="LIST_PRICE">
+      <Position>5</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="44" parent="23" name="PRODUCT_SIZE">
+      <Position>6</Position>
+      <DataType>NUMBER(8,2)|0</DataType>
+    </column>
+    <column id="45" parent="23" name="WEIGHT">
+      <Position>7</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="46" parent="23" name="PRODUCT_CATEGORY">
+      <Position>8</Position>
+      <DataType>VARCHAR2(20)|0</DataType>
+    </column>
+    <column id="47" parent="24" name="SALES_DATE">
+      <Position>1</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="48" parent="24" name="ORDER_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="49" parent="24" name="PRODUCT_ID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="50" parent="24" name="CUSTOMER_ID">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="51" parent="24" name="SALESPERSON_ID">
+      <Position>5</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="52" parent="24" name="QUANTITY">
+      <Position>6</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="53" parent="24" name="UNIT_PRICE">
+      <Position>7</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="54" parent="24" name="SALES_AMOUNT">
+      <Position>8</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="55" parent="24" name="TAX_AMOUNT">
+      <Position>9</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="56" parent="24" name="TOTAL_AMOUNT">
+      <Position>10</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="57" parent="25" name="SALESPERSON_ID">
+      <Position>1</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="58" parent="25" name="JOB_TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="59" parent="25" name="FIRST_NAME">
+      <Position>3</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="60" parent="25" name="LAST_NAME">
+      <Position>4</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="61" parent="25" name="MIDDLE_NAME">
+      <Position>5</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="62" parent="25" name="ADDRESS_LINE1">
+      <Position>6</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="63" parent="25" name="ADDRESS_LINE2">
+      <Position>7</Position>
+      <DataType>VARCHAR2(80)|0</DataType>
+    </column>
+    <column id="64" parent="25" name="CITY">
+      <Position>8</Position>
+      <DataType>VARCHAR2(40)|0</DataType>
+    </column>
+    <column id="65" parent="25" name="COUNTRY">
+      <Position>9</Position>
+      <DataType>VARCHAR2(50)|0</DataType>
+    </column>
+    <column id="66" parent="25" name="DATE_ADDED">
+      <Position>10</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="67" parent="26" name="SALES_DATE">
+      <Position>1</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="68" parent="26" name="ORDER_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="69" parent="26" name="PRODUCT_ID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="70" parent="26" name="CUSTOMER_ID">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="71" parent="26" name="SALESPERSON_ID">
+      <Position>5</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="72" parent="26" name="QUANTITY">
+      <Position>6</Position>
+      <DataType>NUMBER(4)|0</DataType>
+    </column>
+    <column id="73" parent="26" name="UNIT_PRICE">
+      <Position>7</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="74" parent="26" name="SALES_AMOUNT">
+      <Position>8</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="75" parent="26" name="TAX_AMOUNT">
+      <Position>9</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="76" parent="26" name="TOTAL_AMOUNT">
+      <Position>10</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="77" parent="27" name="SALES_DATE">
+      <Position>1</Position>
+      <DataType>DATE|0</DataType>
+    </column>
+    <column id="78" parent="27" name="ORDER_ID">
+      <Position>2</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="79" parent="27" name="PRODUCT_ID">
+      <Position>3</Position>
+      <DataType>NUMBER(*)|0</DataType>
+    </column>
+    <column id="80" parent="27" name="CUSTOMER_ID">
+      <Position>4</Position>
+      <DataType>NUMBER(5)|0</DataType>
+    </column>
+    <column id="81" parent="27" name="SALES_AMOUNT">
+      <Position>5</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="82" parent="27" name="TOTAL_AMOUNT">
+      <Position>6</Position>
+      <DataType>NUMBER(10,2)|0</DataType>
+    </column>
+    <column id="83" parent="27" name="REGION">
+      <Position>7</Position>
+      <DataType>VARCHAR2(10)|0</DataType>
+    </column>
+  </database-model>
+</dataSource>
